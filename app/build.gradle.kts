@@ -50,6 +50,10 @@ android {
 }
 
 dependencies {
+    //settings.gradle.ktsのlibsのbundleで定義したandroidx.media3（alias名。ニックネームとか、便宜上の呼び名みたいなもの）を参照している。
+    // bundleには各libraryのaliasが定義されているのでそれを一括で参照できる。
+    implementation(libs.bundles.androidx.media3)
+    implementation(libs.androidx.media3.exoplayer)
     implementation("androidx.media3:media3-exoplayer:1.1.1")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
