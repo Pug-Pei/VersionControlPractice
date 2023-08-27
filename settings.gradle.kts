@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "VersionControlPractice"
 include(":app")
- 
+include(":app_core")
